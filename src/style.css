@@ -1,1 +1,18 @@
 @import "tailwindcss";
+
+@layer{
+    .bg-image{
+        background-image: url(./assets/19_jan-starts-26-homepage.jpg.jpeg);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .btm-border:hover{
+        border-bottom: 2.5px solid white ;
+    }
+
+    button{
+        cursor: pointer;
+    }
+}

@@ -8,17 +8,157 @@
     <title>tailwindcloniningate</title>
   </head>
   <body>
-    <nav>
-      <h1>Liverpool</h1>
-      <ul>
-        <li>Home</li>
-        <li>Contact</li>
-        <li>About</li>
-      </ul>
-    </nav>
-    <div id="app" class="h-96 w-96 bg-amber-400">
-      <h1 class="text-4xl">hello</h1>
-    </div>
+    <header class="h-[83vh] bg-image text-white">
+      <nav>
+        <main class="flex items-center justify-between px-18 py-4">
+          <div>
+            <img class="w-[200px]  brightness-0 invert" src="./src/assets/logo.svg" alt="">
+          </div>
+          <ul class="flex items-center gap-4 text-[.8rem]">
+            <li class="btm-border">News</li>
+            <li>Jobs</li>
+            <li>Donation</li>
+            <li>A-Z</li>
+            <li>Alumni</li>
+            <li>Staff</li>
+            <li>Students</li>
+          </ul>
+        </main>
+        <section class="px-18 flex justify-between items-center">
+          <ul class="flex gap-8 items-center font-bold">
+            <li class="flex items-center gap-2">
+              <span>Study</span>
+              <img class="w-[25px]" src="src/assets/arrow.svg" alt="">
+            </li>
+            <li class="flex items-center gap-3">
+              <span>Student Life</span>
+              <img class="w-[25px]" src="src/assets/arrow.svg" alt="">
+            </li>
+            <li class="flex items-center gap-3">
+              <span>Research and innovation</span>
+              <img class="w-[25px]" src="src/assets/arrow.svg" alt="">
+            </li>
+            <li class="flex items-center gap-3">
+              <span>Global</span>
+              <img class="w-[25px]" src="src/assets/arrow.svg" alt="">
+            </li>
+            <li class="flex items-center gap-3">
+              <span>About us</span>
+              <img class="w-[25px]" src="src/assets/arrow.svg" alt="">
+            </li>
+          </ul>
+          <div class="flex gap-3 items-center">
+            <img class="w-[19px]" src="/src/assets/search.svg" alt="">
+            <p>Search the site</p>
+          </div>
+        </section>
+      </nav>
+      <main class="px-18 pt-20">
+        <div>
+          <h1 class="text-6xl border-2 border-white p-3 w-fit font-bold">MAKE 2026 YOUR YEAR</h1>
+          <p class="text-2xl border-2 border-white w-[650px] p-3">
+            We offer a range of master's courses in business and management, allied health, computer science and engineering all
+            available to start in January 2026.
+          </p>
+        </div>
+        <div class="flex gap-2 items-center border border-white w-fit py-3 px-4 mt-10">
+          <p class="">Discover our January courses</p>
+          <img class="w-[25px]" src="src/assets/right-arrow-svgrepo-com.svg" alt="">
+        </div>
+      </main>
+    </header>
+    <section class="bg-[#212b58] text-white flex flex-col items-center p-8">
+      <div class="flex gap-8 items-center pb-4">
+        <h1 class="text-xl font-bold">Find your course</h1>
+        <div class="flex items-center gap-3">
+          <input type="search" placeholder="" class="bg-white text-black outline-none px-3 text-2xl py-2 w-fit md:w-96 lg:w-[600px]">
+          <button class="border border-white px-5 py-3">Search</button>
+        </div>
+        <ul>
+          <li class="border-b"><a href="#">Course by A-Z</a></li>
+          <li class="border-b"><a href="#">Course by Subject</a></li>
+        </ul>
+      </div>
+      <div class="pt-2">
+        <ul class="flex gap-8 items-center ">
+          <li class="flex items-center gap-2">
+            <div class="w-5 h-5 rounded-full bg-white"></div>
+            <span>Undergraduate</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-full bg-white"></div>
+            <span>Postgraduate taught</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <div class="w-5 h-5 rounded-full bg-white"></div>
+            <span>Postgraduate research</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <main class="px-18 py-12 space-y-10">
+      <h1 class="text-3xl font-bold">Discover the University of Liverpool</h1>
+      <div class="lg:grid lg:grid-cols-5 lg:gap-8">
+        <img class="max-lg:hidden lg:col-span-2" src="src/assets/29_contact-us-VGM.jpg.jpeg" alt="">
+        <div class="space-y-8 lg:col-span-3">
+          <p class="text-xl">
+            We are the University of Liverpool. Located at the heart of a thrilling world city, we are a dynamic institution of
+            academic excellence and innovation, making a positive impact across the United Kingdom and the wider world.
+          </p>
+          <p>
+            Since 1881, we've been at the forefront of world-class research and education, known for our cutting-edge facilities and
+            relentless pursuit of excellence and achievement. Find out how you can be part of our vibrant community and explore the
+            work we’re doing with our famous home city.
+          </p>
+          <section class="flex gap-3">
+            <button class="border w-fit py-3 px-5">Learn about s</button>
+            <button class="border w-fit py-3 px-5" >Liverpool: Our City, Our inspiration</button>
+          </section>
+        </div>
+      </div>
+      <article class="grid grid-cols-6 bg-[#212b58] text-white">
+        <div class="col-span-4 p-14 space-y-6">
+          <h1 class="text-2xl font-bold">Study with us</h1>
+          <p>
+            Discover endless possibilities. We offer a range of courses with support and expertise to help you succeed in your
+            future career. Find your perfect course, explore our subject areas or discover everything you need to know about
+            studying with us.
+          </p>
+          <section class="space-x-4 space-y-4">
+            <button class="border w-fit py-3 px-5">Undergraduate</button>
+            <button class="border w-fit py-3 px-5">Master's</button>
+            <button class="border w-fit py-3 px-5">Postgraduate research</button>
+            <button class="border w-fit py-3 px-5">Continuing Professional Development</button>
+            <button class="border w-fit py-3 px-5">Intertional students</button>
+          </section>
+        </div>
+        <div class="col-span-2 bg-[url(/src/assets/maleStudents.webp)] bg-top bg-cover"></div>
+      </article>
+      <aside class="bg-[#ef426f] p-8 text-white flex items-center gap-8">
+        <img class="brightness-0 invert w-[100px]" src="src/assets/18_conversation.svg" alt="">
+        <section class="font-bold text-4xl">
+          <h1>Undergraduate</h1>
+          <h1>open events</h1>
+        </section>
+        <p class="text-2xl">
+          Meet us online at our Undergraduate Online Open Week to find out more about studying a degree at Liverpool.
+        </p>
+        <p class="w-fit py-3 px-5 font-bold bg-[#212b58]">Bookyourplace</p>
+      </aside>
+      <section class="bg-[#212b58] text-white grid grid-cols-2">
+        <div class="col-span-1 bg-[url(/src/assets/31_fellowships-promo.jpg.jpeg)] bg-top bg-cover"></div>
+        <div class="col-span-1 space-y-3 py-28 px-12">
+          <h1 class="text-2xl font-bold">University of Liverpool Fellowships</h1>
+          <p>
+            Do you have an original and compelling vision for harnessing the power of AI for research? Apply for one of our research
+            fellowships and bring it to life at Liverpool.
+          </p>
+          <button class="border w-fit py-3 px-5">Apply now</button>
+        </div>
+      </section>
+    </main>
+    <section></section>
+    <footer></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
