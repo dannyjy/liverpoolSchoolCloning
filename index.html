@@ -9,12 +9,12 @@
   </head>
   <body>
     <header class="h-[83vh] bg-image text-white">
-      <nav>
-        <main class="flex items-center justify-between px-18 py-4">
+      <nav class="space-y-5">
+        <main class="flex items-center justify-between px-4 md:px-18 py-4">
           <div>
-            <img class="w-[200px]  brightness-0 invert" src="./src/assets/logo.svg" alt="">
+            <img class="w-[200px] brightness-0 invert" src="./src/assets/logo.svg" alt="">
           </div>
-          <ul class="flex items-center gap-4 text-[.8rem]">
+          <ul class="flex items-center gap-4 text-[.8rem] max-md:hidden">
             <li class="btm-border">News</li>
             <li>Jobs</li>
             <li>Donation</li>
@@ -23,8 +23,12 @@
             <li>Staff</li>
             <li>Students</li>
           </ul>
+          <div class="md:hidden flex gap-2">
+            <img class="w-[25px] cursor-pointer" src="src/assets/search.svg" alt="">
+            <img class="w-10 cursor-pointer" src="src/assets/hamburger-menu-svgrepo-com.svg" alt="">
+          </div>
         </main>
-        <section class="px-18 flex justify-between items-center">
+        <section class="px-18 flex justify-between items-center max-md:hidden">
           <ul class="flex gap-8 items-center font-bold">
             <li class="flex items-center gap-2">
               <span>Study</span>
@@ -53,10 +57,10 @@
           </div>
         </section>
       </nav>
-      <main class="max-lg:px-4 lg:px-18 lg:pt-20">
-        <div>
-          <h1 class="text-6xl border-2 border-white p-3 w-fit font-bold">MAKE 2026 YOUR YEAR</h1>
-          <p class="text-2xl border-2 border-white w-[650px] p-3">
+      <main class="max-lg:px-4 lg:px-18 lg:pt-20 max-sm:pt-24">
+        <div class="">
+          <h1 class="text-2xl sm:text-6xl border-2 border-white p-3 w-fit font-bold">MAKE 2026 YOUR YEAR</h1>
+          <p class="text-[1rem] sm:text-2xl border-2 border-white w-fit sm:w-[650px] p-3">
             We offer a range of master's courses in business and management, allied health, computer science and engineering all
             available to start in January 2026.
           </p>
@@ -158,7 +162,7 @@
         </div>
       </section>
     </main>
-    <div class="bg-[#f6f6f4] sm:p-4 md:p-18 space-y-8">
+    <div class="bg-[#f6f6f4] p-4 lg:p-18 space-y-8">
       <h1 class="text-2xl font-bold">Our rankings and reputation</h1>
       <section class="grid grid-cols-[repeat(fit,minmax(300,1fr))] gap-4 sm:grid-cols-2">
         <div class="col-span-1 grid max-sm:grid-rows-2 sm:grid-cols-2 bg-white p-4 sm:py-36 sm:px-10 gap-10">
@@ -189,9 +193,125 @@
       </section>
       <button class="border w-full py-3 px-5 sm:w-fit">Explore our rankings and reputation</button>
     </div>
-    <main class="h-screen bg-white">
-
+    <main class="bg-white lg:p-18 space-y-10">
+      <aside class="grid max-md:grid-rows-3 md:grid-cols-6 bg-[#212b58] text-white">
+        <div class="p-4 max-md:row-span-2 md:col-span-4 md:py-32 md:px-16 space-y-6">
+          <h1 class="text-2xl font-bold">Discover Liverpool in India</h1>
+          <p>
+            Introducing our new campus in the city of Bengaluru, the centre of high-tech industry in India. Find out more about our new campus, which will strengthen existing partnerships, build new connections and bring our world-class teaching and research to India.
+          </p>
+          <button class="border w-full sm:w-fit py-3 px-5">Find more</button>
+        </div>
+        <div class="max-md:row-start-1 md:col-span-2 bg-[url(/src/assets/india.jpeg)] bg-top bg-cover"></div>
+      </aside>
+      <article class="space-y-8 py-10 max-lg:px-4">
+        <h1 class="text-4xl font-bold">Our research: Transforming lives, changing the world</h1>
+        <p class="text-xl">
+          Discover how our research is making a difference all over the world. As a founding member of the Russell Group, research
+          is the driving force behind our success, tackling real-world challenges to have a positive impact on society and the
+          world around us.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-8">
+          <div class="border-t p-4 col-span-1">
+            <section class="flex justify-between items-center">
+              <h1 class="font-bold text-xl underline">Research frontiers</h1>
+              <img class="w-[25px] brightness-0" src="src/assets/right-arrow-svgrepo-com.svg" alt="">
+            </section>
+            <p>
+              Learn more about our research frontiers and how we're driving innovation in materials discovery, particle physics,
+              therapeutics innovation, AI for life, and infection resilience to build a better future.
+            </p>
+          </div>
+          <div class="border-t p-4 col-span-1">
+            <section class="flex justify-between items-center">
+              <h1 class="font-bold text-xl underline">Interdisciplinary Centre for Sustainability Research</h1>
+              <img class="w-[25px] brightness-0" src="src/assets/right-arrow-svgrepo-com.svg" alt="">
+            </section>
+            <p>
+              Explore our new Interdisciplinary Centre for Sustainability Research and find out how we're utilising a variety of
+              skills and knowledge to find new developments in sustainability research.
+            </p>
+          </div>
+          <div class="border-t p-4 col-span-1">
+            <section class="flex justify-between items-center">
+              <h1 class="font-bold text-xl underline">Our impact</h1>
+              <img class="w-[25px] brightness-0" src="src/assets/right-arrow-svgrepo-com.svg" alt="">
+            </section>
+            <p>
+              91% of our research is ranked world leading or internationally excellent (REF 2021). Find out how our researchers are
+              improving the world we live in every day.
+            </p>
+          </div>
+        </div>
+        <button class="border w-full sm:w-fit py-3 px-5">Explor our research</button>
+      </article>
+      <section class="bg-[#f6f6f4] grid max-md:grid-rows-3 md:grid-cols-3">
+        <div
+          class="max-md:row-span-1 md:col-span-1 bg-[url(/src/assets/studentLife.jpeg)] bg-center md:bg-top bg-cover">
+        </div>
+        <div class="max-md:row-span-2 md:col-span-2 space-y-3 py-4 px-4 md:py-28 md:px-12">
+          <h1 class="text-2xl font-bold">Discover a vibrant student life in Liverpool</h1>
+          <p>
+          Enjoy a fantastic student experience when you study with us. Explore the Guild of Students, learn more about what’s
+          happening in our amazing home city and discover your accommodation options.
+          </p>
+          <section class="flex max-sm:flex-col gap-6">
+            <button class="border w-full sm:w-fit py-3 px-5">Student life at Liverpool</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Why choose Liverpool?</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Find your accommodation</button>
+          </section>
+        </div>
+      </section>
+      <aside class="grid max-md:grid-rows-3 md:grid-cols-6 bg-[#212b58] text-white">
+        <div class="p-4 max-md:row-span-2 md:col-span-4 md:py-20 md:px-16 space-y-6">
+          <h1 class="text-2xl font-bold">We're making an impact across the globe</h1>
+          <p>
+            We’re proud to be part of a global community, where collaboration drives our success and impact across the world. Find
+            out more about our commitment to global engagement and how we’re making a difference to the world.
+          </p>
+          <div class="sm:flex sm:gap-4 space-y-4">
+            <button class="border w-full sm:w-fit py-3 px-5">Explore our global partnerships</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Work with us</button>
+          </div>
+        </div>
+        <div class="max-md:row-start-1 md:col-span-2 bg-[url(/src/assets/global.jpeg)] bg-top bg-cover"></div>
+      </aside>
     </main>
+        <div class="bg-[#f6f6f4] p-4 lg:p-18 space-y-8">
+          <h1 class="text-2xl font-bold">Latest news</h1>
+          <section class="grid grid-cols-[repeat(fit,minmax(300,1fr))] gap-4 sm:grid-cols-2">
+            <div class="col-span-1 grid max-sm:grid-rows-2 sm:grid-cols-2 bg-white p-4 sm:py-36 sm:px-10 gap-10">
+                <p></p>
+                <h1 class="text-2xl font-bold pb-4">World Top 150</h1>
+                <p class="text-[.9rem]">
+                  QS World University Rankings 2026 places us in the Top 150 global universities. We've moved up to 147th in the
+                  world,
+                  climbing 43 places in the last 3 years and up from 165th in the 2025 rankings.
+                </p>
+            </div>
+            <div class="grid grid-cols-[repeat(fit,minmax(300,1fr))] grid-rows-3 gap-4">
+              <div class="row-span-1 p-10 bg-white space-y-3">
+                <h1 >24 October 2025</h1>
+                <p class="row-span-1 sm:col-span-2 underline text-xl">
+                University of Liverpool Research Fellowships open for applications for 2025-2026
+                </p>
+              </div>
+              <div class="row-span-1 p-10 bg-white space-y-3">
+                <h1 >24 October 2025</h1>
+                <p class="row-span-1 sm:col-span-2 underline text-xl">
+                University of Liverpool Research Fellowships open for applications for 2025-2026
+                </p>
+              </div>
+              <div class="row-span-1 p-10 bg-white space-y-3">
+                <h1 >24 October 2025</h1>
+                <p class="row-span-1 sm:col-span-2 underline text-xl">
+                University of Liverpool Research Fellowships open for applications for 2025-2026
+                </p>
+              </div>
+            </div>
+          </section>
+          <button class="border w-full py-3 px-5 sm:w-fit">Read more news</button>
+        </div>
     <footer></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
