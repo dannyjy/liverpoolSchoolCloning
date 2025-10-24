@@ -53,7 +53,7 @@
           </div>
         </section>
       </nav>
-      <main class="px-18 pt-20">
+      <main class="max-lg:px-4 lg:px-18 lg:pt-20">
         <div>
           <h1 class="text-6xl border-2 border-white p-3 w-fit font-bold">MAKE 2026 YOUR YEAR</h1>
           <p class="text-2xl border-2 border-white w-[650px] p-3">
@@ -67,20 +67,21 @@
         </div>
       </main>
     </header>
-    <section class="bg-[#212b58] text-white flex flex-col items-center p-8">
-      <div class="flex gap-8 items-center pb-4">
-        <h1 class="text-xl font-bold">Find your course</h1>
-        <div class="flex items-center gap-3">
+    <section class="bg-[#212b58] text-white flex flex-col sm:items-center p-4 md:p-8">
+      <div class="md:flex gap-8 items-center pb-4">
+        <h1 class="text-xl font-bold max-sm:pb-2">Find your course</h1>
+        <div class="flex items-center sm:gap-3">
           <input type="search" placeholder="" class="bg-white text-black outline-none px-3 text-2xl py-2 w-fit md:w-96 lg:w-[600px]">
-          <button class="border border-white px-5 py-3">Search</button>
+          <button class="border border-white px-5 py-3 max-sm:hidden">Search</button>
+          <img class="sm:hidden border border-white p-1 w-[50px]" src="/src/assets/right-arrow-svgrepo-com.svg" alt="">
         </div>
-        <ul>
+        <ul class="max-lg:hidden">
           <li class="border-b"><a href="#">Course by A-Z</a></li>
           <li class="border-b"><a href="#">Course by Subject</a></li>
         </ul>
       </div>
       <div class="pt-2">
-        <ul class="flex gap-8 items-center ">
+        <ul class="flex gap-4 max-sm:grid max-sm:grid-cols-[repeate(fit,minmax(100px,1fr))] sm:gap-8 md:items-center px-1">
           <li class="flex items-center gap-2">
             <div class="w-5 h-5 rounded-full bg-white"></div>
             <span>Undergraduate</span>
@@ -96,9 +97,9 @@
         </ul>
       </div>
     </section>
-    <main class="px-18 py-12 space-y-10">
-      <h1 class="text-3xl font-bold">Discover the University of Liverpool</h1>
-      <div class="lg:grid lg:grid-cols-5 lg:gap-8">
+    <main class="lg:px-18 py-12 space-y-10">
+      <h1 class="text-3xl font-bold max-lg:px-4">Discover the University of Liverpool</h1>
+      <div class="lg:grid lg:grid-cols-5 lg:gap-8 px-4">
         <img class="max-lg:hidden lg:col-span-2" src="src/assets/29_contact-us-VGM.jpg.jpeg" alt="">
         <div class="space-y-8 lg:col-span-3">
           <p class="text-xl">
@@ -110,31 +111,31 @@
             relentless pursuit of excellence and achievement. Find out how you can be part of our vibrant community and explore the
             work we’re doing with our famous home city.
           </p>
-          <section class="flex gap-3">
-            <button class="border w-fit py-3 px-5">Learn about s</button>
-            <button class="border w-fit py-3 px-5" >Liverpool: Our City, Our inspiration</button>
+          <section class="sm:flex sm:gap-3 space-y-3">
+            <button class="border w-full py-3 px-5 sm:w-fit">Learn about us</button>
+            <button class="border w-full py-3 px-5 sm:w-fit">Liverpool: Our City, Our inspiration</button>
           </section>
         </div>
       </div>
-      <article class="grid grid-cols-6 bg-[#212b58] text-white">
-        <div class="col-span-4 p-14 space-y-6">
+      <article class="grid max-md:grid-rows-3 md:grid-cols-6 bg-[#212b58] text-white">
+        <div class="p-4 max-md:row-span-2 md:col-span-4 md:p-14 space-y-6">
           <h1 class="text-2xl font-bold">Study with us</h1>
           <p>
             Discover endless possibilities. We offer a range of courses with support and expertise to help you succeed in your
             future career. Find your perfect course, explore our subject areas or discover everything you need to know about
             studying with us.
           </p>
-          <section class="space-x-4 space-y-4">
-            <button class="border w-fit py-3 px-5">Undergraduate</button>
-            <button class="border w-fit py-3 px-5">Master's</button>
-            <button class="border w-fit py-3 px-5">Postgraduate research</button>
-            <button class="border w-fit py-3 px-5">Continuing Professional Development</button>
-            <button class="border w-fit py-3 px-5">Intertional students</button>
+          <section class="space-x-4 space-y-4 max-sm:flex max-sm:flex-col">
+            <button class="border w-full sm:w-fit py-3 px-5">Undergraduate</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Master's</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Postgraduate research</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Continuing Professional Development</button>
+            <button class="border w-full sm:w-fit py-3 px-5">Intertional students</button>
           </section>
         </div>
-        <div class="col-span-2 bg-[url(/src/assets/maleStudents.webp)] bg-top bg-cover"></div>
+        <div class="max-md:row-start-1 md:col-span-2 bg-[url(/src/assets/maleStudents.webp)] bg-top bg-cover"></div>
       </article>
-      <aside class="bg-[#ef426f] p-8 text-white flex items-center gap-8">
+      <aside class="bg-[#ef426f] px-4 py-8 sm:p-8 max-sm:text-center text-white flex max-sm:flex-col items-center gap-8">
         <img class="brightness-0 invert w-[100px]" src="src/assets/18_conversation.svg" alt="">
         <section class="font-bold text-4xl">
           <h1>Undergraduate</h1>
@@ -143,11 +144,11 @@
         <p class="text-2xl">
           Meet us online at our Undergraduate Online Open Week to find out more about studying a degree at Liverpool.
         </p>
-        <p class="w-fit py-3 px-5 font-bold bg-[#212b58]">Bookyourplace</p>
+        <p class=" w-full sm:w-fit py-3 px-5 font-bold bg-[#212b58] text-center">Bookyourplace</p>
       </aside>
-      <section class="bg-[#212b58] text-white grid grid-cols-2">
-        <div class="col-span-1 bg-[url(/src/assets/31_fellowships-promo.jpg.jpeg)] bg-top bg-cover"></div>
-        <div class="col-span-1 space-y-3 py-28 px-12">
+      <section class="bg-[#212b58] text-white grid max-md:grid-rows-3 md:grid-cols-2">
+        <div class="max-md:row-span-1 md:col-span-1 bg-[url(/src/assets/31_fellowships-promo.jpg.jpeg)] bg-center md:bg-top bg-cover"></div>
+        <div class="max-md:row-span-2 md:col-span-1 space-y-3 py-4 px-4 md:py-28 md:px-12">
           <h1 class="text-2xl font-bold">University of Liverpool Fellowships</h1>
           <p>
             Do you have an original and compelling vision for harnessing the power of AI for research? Apply for one of our research
@@ -157,7 +158,40 @@
         </div>
       </section>
     </main>
-    <section></section>
+    <div class="bg-[#f6f6f4] sm:p-4 md:p-18 space-y-8">
+      <h1 class="text-2xl font-bold">Our rankings and reputation</h1>
+      <section class="grid grid-cols-[repeat(fit,minmax(300,1fr))] gap-4 sm:grid-cols-2">
+        <div class="col-span-1 grid max-sm:grid-rows-2 sm:grid-cols-2 bg-white p-4 sm:py-36 sm:px-10 gap-10">
+          <img class="row-span-1 sm:col-span-1" src="src/assets/15_b867bc88-ceab-4768-86e2-d73c679467f7.png" alt="">
+          <div class="row-span-1 sm:col-span-1">
+            <h1 class="text-2xl font-bold pb-4">World Top 150</h1>
+            <p class="text-[.9rem]">
+              QS World University Rankings 2026 places us in the Top 150 global universities. We've moved up to 147th in the world,
+              climbing 43 places in the last 3 years and up from 165th in the 2025 rankings.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-[repeat(fit,minmax(300,1fr))] grid-rows-3 gap-4">
+          <div class="row-span-1 grid max-sm:grid-rows-2 sm:grid-cols-3 items-center  py-4 px-10 bg-white">
+            <img class="row-span-1 sm:col-span-1 min-w-[120px] max-w-[100px] max-sm:place-self-center" src="src/assets/13_e0edb76e-fe21-4394-9a12-024e644e1e0e.png" alt="">
+            <p class="row-span-1 sm:col-span-2">Our teaching is rated Gold, the highest level, by the Teaching Excellence Framework.</p>
+          </div>
+          <div class="row-span-1 grid max-sm:grid-rows-2 sm:grid-cols-3 items-center py-4 px-10 bg-white">
+            <img class="row-span-1 sm:col-span-1 min-w-[120px] max-w-[100px] place-self-center" src="src/assets/23_40e21122-d48a-4bd0-b979-fdd30509fe85.png" alt="">
+            <p class="row-span-1 sm:col-span-2">We've climbed 5 places to 18th in The Times and The Sunday Times Good University Guide 2026.</p>
+          </div>
+          <div class="row-span-1 grid max-sm:grid-rows-2 sm:grid-cols-3 items-center py-4 px-10 bg-white">
+            <img class="row-span-1 sm:col-span-1 min-w-[120px] max-w-[100px] place-self-center" src="src/assets/16_a12dd60a-ee36-4436-89dc-e0416c0f4bfe.png" alt="">
+            <p class="row-span-1 sm:col-span-2">World Top 150
+            We’re ranked in the top 150 universities globally in the Times Higher Education World University rankings</p>
+          </div>
+        </div>
+      </section>
+      <button class="border w-full py-3 px-5 sm:w-fit">Explore our rankings and reputation</button>
+    </div>
+    <main class="h-screen bg-white">
+
+    </main>
     <footer></footer>
     <script type="module" src="/src/main.js"></script>
   </body>
